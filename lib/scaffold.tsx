@@ -1,9 +1,11 @@
+import { ContextProvider } from './context'
+
 export const Scaffold: React.FC<React.PropsWithChildren> = ({
   children
 }: React.PropsWithChildren) => {
   return (
-    <div>
+    <ContextProvider>
       {children}
-    </div>
+    </ContextProvider>
   )
 }
